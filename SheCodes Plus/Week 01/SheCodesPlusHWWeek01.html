@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes HW Week 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      /* Create two equal columns that sits next to each other */
+      .column {
+        flex: 20%;
+        padding: 5px;
+      }
+
+      ul {
+        list-style-type: none;
+        text-align: left;
+      }
+
+      .columnWeather {
+        float: center;
+        width: 10%;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="search" placeholder="Enter a city..." class="formInput" />
+        <input type="submit" value="search" />
+      </form>
+
+      <div class="highlightWather">
+        <div class="row">
+          <div class="column">
+            <h2>San Francisco</h2>
+            <ul>
+              <li class="dayHourWeather">Thursday 23:18, broken clouds</li>
+              <li class="parameters">Humidity: 69%, Wind: 3.58 km/h</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h2>☁️ 12°C</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="weatherColumns">
+        <div class="row">
+          <div class="columnWeather">
+            <p>
+              Thu
+              <br />
+              ☁️
+              <br />
+              <strong>14°</strong> / 11°
+            </p>
+          </div>
+          <div class="columnWeather">
+            <p>
+              Fri
+              <br />
+              ☁️
+              <br />
+              <strong>15°</strong> / 11°
+            </p>
+          </div>
+          <div class="columnWeather">
+            <p>
+              Sat
+              <br />
+              ☀️
+              <br />
+              <strong>15°</strong> / 13°
+            </p>
+          </div>
+          <div class="columnWeather">
+            <p>
+              Sun
+              <br />
+              🌧️
+              <br />
+              <strong>16°</strong> / 13°
+            </p>
+          </div>
+          <div class="columnWeather">
+            <p>
+              Mon
+              <br />
+              🌧️
+              <br />
+              <strong>15°</strong> / 12°
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>Coded by Mariel Buzarquis</footer>
+    </div>
+  </body>
+</html>
